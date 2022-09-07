@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220906235451">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220907210039">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,15 +17,22 @@
 		<header class="header">
 			<div class="header-top">
 				<div class="header-top__container">
-					<div class="header-top__block-logo">
+					<button class="button-burger"><span></span></button>
+					<div data-da=".menu__wrapper, 767.98" class="header-top__block-logo">
+
 						<div class="header-top__logo-1-ibg">
 							<a class="logo-link" href="#"></a>
-							<img src="img/header/logo-1.svg" alt="logo-1">
+							<img class="mobile-none" src="img/header/logo-1.svg" alt="logo-1">
+							<img class="logo-mobile" src="img/header/logo-1-mobile.svg" alt="logo-1">
 						</div>
-						<div class="header-top__logo-2-ibg tablet-none">
+
+						<div class="header-top__logo-2-ibg tablet-none-picture-block">
 							<a class="logo-link" href="#"></a>
-							<img src="img/header/logo-2.svg" alt="logo-1">
+							<img class="logo-mobile" src="img/header/logo-2-mobile.svg" alt="logo-2">
+							<img class="mobile-none" src="img/header/logo-2.svg" alt="logo-2">
+
 						</div>
+						<div class="header-top__button"><button class="button-close"></button></div>
 					</div>
 
 					<div class="header-top__search-block">
@@ -60,8 +67,9 @@
 								<a class="button-basket" href="#"></a>
 							</div>
 							<div class="header-top__basket-content">
-								<div class="header-top__basket-text">Корзина</div>
-								<a class="button-add-basket" href="#">Добавить товары</a>
+								<div class="header-top__basket-text mobile-none">Корзина</div>
+								<a class="button-add-basket" href="#"><span class="add-basket-text mobile-none">Добавить
+										товары</span><span class="add-basket-count">0</span></a>
 							</div>
 						</div>
 					</div>
@@ -73,7 +81,7 @@
 						<div class="header-main__catalog catalog">
 
 							<div class="catalog__menu menu-catalog">
-								<div class="menu-catalog__title">Каталог</div>
+								<button class="menu-catalog__title">Каталог</button>
 								<div class="menu-catalog__wrapper">
 									<nav class="menu-catalog__body">
 										<ul class="menu-catalog__list">
@@ -88,35 +96,7 @@
 
 													<li class="menu-catalog__item"><a href="#" class="menu-catalog__link">Круг ø 6,5 А240
 															мера</a></li>
-													<ul class="dropdown">
 
-														<li class="menu-catalog__item"><a href="#" class="menu-catalog__link">Круг ø 6,5
-																А240
-																мера</a></li>
-
-														<li class="menu-catalog__item"><a href="#" class="menu-catalog__link">Круг ø 8 А240
-																мера</a></li>
-
-
-														<li class="menu-catalog__item"><a href="#" class="menu-catalog__link">Круг ø 10 А240
-																мера</a></li>
-
-														<li class="menu-catalog__item"><a href="#" class="menu-catalog__link">Круг ø 12 А240
-																мера</a></li>
-
-
-														<li class="menu-catalog__item"><a href="#" class="menu-catalog__link">Круг ø 16
-																А240</a></li>
-
-														<li class="menu-catalog__item"><a href="#" class="menu-catalog__link">Круг ø 20 А240
-																мера</a></li>
-
-
-														<li class="menu-catalog__item"><a href="#" class="menu-catalog__link">Посмотреть все
-																товары</a></li>
-
-
-													</ul>
 
 													<li class="menu-catalog__item"><a href="#" class="menu-catalog__link">Круг ø 8 А240
 															мера</a></li>
@@ -175,22 +155,43 @@
 
 							</div>
 						</div>
-						<nav class="menu__body">
-							<ul class="menu__list">
-								<li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Как заказать </a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Оплата</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Новости</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Контакты </a></li>
+						<div class="menu__burger">
+							<div class="menu__wrapper">
+								<nav class="menu__body">
 
-							</ul>
-						</nav>
+									<ul class="menu__list-mobile-basket-catalog">
+
+										<li class="menu__item"><button class="menu__link button-catalog-insade">Каталог
+												товаров</a></button>
+										<li class="menu__item"><a href="#" class="menu__link link-basket-mobile">Корзина</a></li>
+									</ul>
+									<ul class="menu__list list-mobile">
+										<li class="menu__item-title">Информация</li>
+										<li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
+										<li class="menu__item"><a href="#" class="menu__link">Как заказать </a></li>
+										<li class="menu__item"><a href="#" class="menu__link">Оплата</a></li>
+										<li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
+										<li class="menu__item"><a href="#" class="menu__link">Новости</a></li>
+										<li class="menu__item"><a href="#" class="menu__link">Контакты </a></li>
+
+									</ul>
+									<ul class="menu__list-info list-info-mobile">
+										<li class="menu__item"><a href="tel:0800 30 30 70" class="menu__link link-tel-mobile">0800 30 30
+												70</a></li>
+										<li class="menu__item"><a href="#" class="menu__link link-info-mobile">Справочный центр </a>
+										</li>
+										<li class="menu__item"><a href="#" class="menu__link link-shape-mobile">Связаться с нами</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
 					</div>
-					<div class="header-main__language language">
-						<div class="language-block">
+					<div data-da=".list-mobile, 767.98" class="header-main__language language">
+						<div class="language__text">Язык</div>
+						<div class="language-block ">
 							<input checked id='lang-1' type='radio' name="language" />
-							<label for='lang-1'>
+							<label class="language-one" for='lang-1'>
 								<span>UA</span>
 							</label>
 						</div>
@@ -201,7 +202,10 @@
 							</label>
 						</div>
 					</div>
-					<div class="header-main__entrance-office">
+					<div data-da=".menu__wrapper, 767.98" class="header-main__entrance-office">
+						<div class="header-main__logo-person-ibg_contain">
+							<img src="img/header/person-white.svg" alt="Photo">
+						</div>
 						<a class="button-entrance-office" href="#">Войти в личный кабинет</a>
 					</div>
 				</div>
@@ -217,7 +221,7 @@
 		</footer>
 	</div>
 
-	<script src="js/app.min.js?_v=20220906235451"></script>
+	<script src="js/app.min.js?_v=20220907210039"></script>
 </body>
 
 </html>
