@@ -588,6 +588,13 @@
         if (script_menuClose) script_menuClose.classList.remove("_menu-burger-active");
         if (bodyBg) bodyBg.classList.remove("_bodyBg-active");
     }));
+    const buttonCatalogOpen = document.querySelector(".menu-catalog__title");
+    const menuCatalogOpen = document.querySelector(".menu__catalog-mobile");
+    if (buttonCatalogOpen) buttonCatalogOpen.addEventListener("click", (function(e) {
+        buttonCatalogOpen.classList.toggle("_button-open-catalog-active");
+        if (menuCatalogOpen) menuCatalogOpen.classList.add("_menu-catalog-active");
+        if (bodyBg) bodyBg.classList.add("_bodyBg-active");
+    }));
     const hoverButton = document.querySelector(".menu-catalog__wrapper");
     const script_parent = document.querySelector(".menu-catalog__title");
     hoverButton.addEventListener("mouseenter", (() => {
