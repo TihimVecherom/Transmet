@@ -880,8 +880,7 @@ h6 {
 }
 
 ._menu-burger-active {
-  background: inherit;
-  left: 0;
+  left: 0 !important;
 }
 
 .wrapper::after {
