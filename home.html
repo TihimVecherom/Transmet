@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220908001700">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220908160717">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -95,15 +95,15 @@
 											<li class="menu-catalog__item"><a href="#" class="menu-catalog__link link-armature">Арматура</a>
 											</li>
 
-											<!-- dropdown меню второй вложенности -->
-											<ul class="dropdown">
+											<!-- menu-catalog__dropdown меню второй вложенности -->
+											<ul class="menu-catalog__dropdown">
 												<li class="menu-catalog__item"><a href="#" class="menu-catalog__link bg-arrow">Арматура
 														А240
 														(Круг)</a>
 												</li>
 
-												<!-- dropdown меню второй вложенности -->
-												<ul class="dropdown">
+												<!-- menu-catalog__dropdown меню второй вложенности -->
+												<ul class="menu-catalog__dropdown">
 
 													<li class="menu-catalog__item"><a href="#" class="menu-catalog__link">Круг ø 6,5 А240
 															мера</a></li>
@@ -166,14 +166,17 @@
 									</nav>
 								</div>
 
-
 							</div>
 						</div>
 
-
+						<!-- mobile какталог бургер-->
 						<div class="menu__catalog-mobile">
 							<div class="menu__catalog-wrapper">
-								<nav class="menu__body menu-catalog">
+								<div class="menu__catalog-buttons">
+									<div class="menu__buttons-title">Каталог товаров</div>
+									<button class="close-catalog-button"></button>
+								</div>
+								<nav class="menu__body menu-catalog pc-none">
 
 									<nav class="menu-catalog__body ">
 										<ul class="menu-catalog__list">
@@ -217,7 +220,58 @@
 							</div>
 						</div>
 
+						<!-- mobile какталог бургер из меню -->
+						<div class="menu__catalog-mobile-menu">
+							<div class="menu__catalog-wrapper">
+								<div class="menu__catalog-buttons ">
+									<button class="button-back-menu">Каталог товаров</button>
+									<button class="close-all-catalog-button"></button>
+								</div>
+								<nav class="menu__body menu-catalog pc-none">
 
+									<nav class="menu-catalog__body ">
+										<ul class="menu-catalog__list">
+											<li class="menu-catalog__item"><a href="#" class="menu-catalog__link link-armature">Арматура</a>
+											</li>
+
+											<li class="menu-catalog__item"><a href="#" class="menu-catalog__link link-pipe">Трубный
+													прокат</a>
+											</li>
+											<li class="menu-catalog__item"><a href="#" class="menu-catalog__link link-sheet">Листовой
+													прокат</a>
+											</li>
+											<li class="menu-catalog__item"><a href="#" class="menu-catalog__link link-sort">Сортовой и
+													фасонный
+													прокат</a></li>
+											<li class="menu-catalog__item"><a href="#" class="menu-catalog__link link-cone">Легированные
+													круги</a></li>
+											<li class="menu-catalog__item"><a href="#" class="menu-catalog__link link-seting">Сопутсвующие
+													товары</a></li>
+											<li class="menu-catalog__item"><a href="#" class="menu-catalog__link link-catalog">Перейти в
+													каталог</a></li>
+
+
+										</ul>
+
+									</nav>
+
+
+									<ul class="menu__list-info list-info-mobile">
+										<li class="menu__item"><a href="tel:0800 30 30 70" class="menu__link link-tel-mobile">0800
+												30 30
+												70</a></li>
+										<li class="menu__item"><a href="#" class="menu__link link-info-mobile">Справочный центр
+											</a>
+										</li>
+										<li class="menu__item"><a href="#" class="menu__link link-shape-mobile">Связаться с
+												нами</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+
+						<!-- основное меню бургер -->
 						<div class="menu__burger">
 							<div class="menu__wrapper">
 								<nav class="menu__body">
@@ -225,7 +279,7 @@
 									<ul class="menu__list-mobile-basket-catalog">
 
 										<li class="menu__item"><button class="menu__link button-catalog-insade">Каталог
-												товаров</a></button>
+												товаров</button>
 										<li class="menu__item"><a href="#" class="menu__link link-basket-mobile">Корзина</a></li>
 									</ul>
 									<ul class="menu__list list-mobile">
@@ -236,6 +290,38 @@
 										<li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
 										<li class="menu__item"><a href="#" class="menu__link">Новости</a></li>
 										<li class="menu__item"><a href="#" class="menu__link">Контакты </a></li>
+
+									</ul>
+									<ul class="menu__list-info list-info-mobile">
+										<li class="menu__item"><a href="tel:0800 30 30 70" class="menu__link link-tel-mobile">0800 30 30
+												70</a></li>
+										<li class="menu__item"><a href="#" class="menu__link link-info-mobile">Справочный центр </a>
+										</li>
+										<li class="menu__item"><a href="#" class="menu__link link-shape-mobile">Связаться с нами</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+
+						<!-- меню личного кабинета -->
+						<div class="menu__cabinet">
+							<div class="menu__wrapper">
+								<div class="menu__catalog-buttons ">
+									<button class="button-back-cabinet-menu">Привет, Егор</button>
+									<button class="button-close-cabinet"></button>
+								</div>
+								<nav class="menu__body">
+									<ul class="menu__list list-cabinet">
+
+										<li class="menu__item"><a href="#" class="menu__link link-personal-data">Личные данные</a></li>
+										<li class="menu__item"><a href="#" class="menu__link link-me-orders">Мои заказы</a></li>
+										<li class="menu__item"><a href="#" class="menu__link link-adress-delivery">Адреса доставки</a>
+										</li>
+										<li class="menu__item"><a href="#" class="menu__link link-change-password">Изменить пароль</a>
+										</li>
+										<li class="menu__item"><a href="#" class="menu__link link-exit">Выйти</a></li>
+
 
 									</ul>
 									<ul class="menu__list-info list-info-mobile">
@@ -270,7 +356,7 @@
 						<div class="header-main__logo-person-ibg_contain">
 							<img src="img/header/person-white.svg" alt="Photo">
 						</div>
-						<a class="button-entrance-office" href="#">Войти в личный кабинет</a>
+						<button class="button-entrance-office" href="#">Войти в личный кабинет</button>
 					</div>
 				</div>
 			</div>
@@ -285,7 +371,7 @@
 		</footer>
 	</div>
 
-	<script src="js/app.min.js?_v=20220908001700"></script>
+	<script src="js/app.min.js?_v=20220908160717"></script>
 </body>
 
 </html>

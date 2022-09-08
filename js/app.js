@@ -595,6 +595,53 @@
         if (menuCatalogOpen) menuCatalogOpen.classList.add("_menu-catalog-active");
         if (bodyBg) bodyBg.classList.add("_bodyBg-active");
     }));
+    const buttonCatalogClose = document.querySelector(".close-catalog-button");
+    const menuCatalogClose = document.querySelector(".menu__catalog-mobile");
+    if (buttonCatalogClose) buttonCatalogClose.addEventListener("click", (function(e) {
+        buttonCatalogClose.classList.toggle("_button-open-catalog-active");
+        if (menuCatalogClose) menuCatalogClose.classList.remove("_menu-catalog-active");
+        if (bodyBg) bodyBg.classList.remove("_bodyBg-active");
+    }));
+    const buttonOpenCatalogInsade = document.querySelector(".button-catalog-insade");
+    const menuOpenCatalogInsade = document.querySelector(".menu__catalog-mobile-menu");
+    if (buttonOpenCatalogInsade) buttonOpenCatalogInsade.addEventListener("click", (function(e) {
+        buttonOpenCatalogInsade.classList.toggle("_button-open-insade-catalog-active");
+        if (menuOpenCatalogInsade) menuOpenCatalogInsade.classList.add("_menu-catalog-menu-active");
+        if (bodyBg) bodyBg.classList.add("_bodyBg-active");
+    }));
+    const buttonBackMenu = document.querySelector(".button-back-menu");
+    if (buttonBackMenu) buttonBackMenu.addEventListener("click", (function(e) {
+        buttonBackMenu.classList.toggle("_button-back-menu-active");
+        if (menuOpenCatalogInsade) menuOpenCatalogInsade.classList.remove("_menu-catalog-menu-active");
+        if (bodyBg) bodyBg.classList.add("_bodyBg-active");
+    }));
+    const buttonCloseCatalogMenu = document.querySelector(".close-all-catalog-button");
+    if (buttonCloseCatalogMenu) buttonCloseCatalogMenu.addEventListener("click", (function(e) {
+        buttonCloseCatalogMenu.classList.toggle("_button-all-close-catalog-active");
+        if (menuOpenCatalogInsade) menuOpenCatalogInsade.classList.remove("_menu-catalog-menu-active");
+        if (script_menuClose) script_menuClose.classList.remove("_menu-burger-active");
+        if (bodyBg) bodyBg.classList.remove("_bodyBg-active");
+    }));
+    const buttonOpenCabinet = document.querySelector(".button-entrance-office");
+    const menuOpenCabinet = document.querySelector(".menu__cabinet");
+    if (buttonOpenCabinet) buttonOpenCabinet.addEventListener("click", (function(e) {
+        buttonOpenCabinet.classList.toggle("_button-open-cabinet-active");
+        if (menuOpenCabinet) menuOpenCabinet.classList.add("_menu-cabinet-active");
+        if (bodyBg) bodyBg.classList.add("_bodyBg-active");
+    }));
+    const buttonCloseCabinet = document.querySelector(".button-close-cabinet");
+    const menuCloseCabinet = document.querySelector(".menu__cabinet");
+    if (buttonCloseCabinet) buttonCloseCabinet.addEventListener("click", (function(e) {
+        buttonCloseCabinet.classList.toggle("_button-open-cabinet-active");
+        if (menuCloseCabinet) menuCloseCabinet.classList.remove("_menu-cabinet-active");
+        if (script_menuClose) script_menuClose.classList.remove("_menu-burger-active");
+        if (bodyBg) bodyBg.classList.remove("_bodyBg-active");
+    }));
+    const buttonCabinetBackButton = document.querySelector(".button-back-cabinet-menu");
+    if (buttonCabinetBackButton) buttonCabinetBackButton.addEventListener("click", (function(e) {
+        buttonCabinetBackButton.classList.toggle("_button-open-cabinet-active");
+        if (menuCloseCabinet) menuCloseCabinet.classList.remove("_menu-cabinet-active");
+    }));
     const hoverButton = document.querySelector(".menu-catalog__wrapper");
     const script_parent = document.querySelector(".menu-catalog__title");
     hoverButton.addEventListener("mouseenter", (() => {
