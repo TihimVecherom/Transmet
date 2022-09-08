@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220908163502">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220908203559">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +15,90 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
+			<div id="fix" class="fix-popap"></div>
 			<div class="header-top">
+
+				<div id="popup-basket" class="popap-main">
+					<div class="wrapper-popap">
+						<div class="backgraund-popap"></div>
+						<a class="popap-area" href="#fix"></a>
+
+						<div class="popap">
+
+							<div class="popap__content">
+
+								<div class="popap__items">
+									<div class="popap__item">
+										<div class="popap__item-text">Круг ø 6,5 А240 мера</div>
+										<div class="popap__item-block-price">
+											<div class="popap__price">37 грн</div>
+											<div class="popap__buttons-delet">
+												<button class="button-popap-delet"></button>
+												<button class="button-popap-delet-mobile">Удалить</button>
+											</div>
+										</div>
+									</div>
+									<div class="popap__item">
+										<div class="popap__item-text">Круг ø 6,5 А240 мера</div>
+										<div class="popap__item-block-price">
+											<div class="popap__price">322 грн</div>
+											<div class="popap__buttons-delet">
+												<button class="button-popap-delet"></button>
+												<button class="button-popap-delet-mobile">Удалить</button>
+											</div>
+										</div>
+									</div>
+									<div class="popap__item">
+										<div class="popap__item-text">Круг ø 6,5 А240 мера</div>
+										<div class="popap__item-block-price">
+											<div class="popap__price">322 грн</div>
+											<div class="popap__buttons-delet">
+												<button class="button-popap-delet"></button>
+												<button class="button-popap-delet-mobile">Удалить</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="popap__sum-block">
+									<div class="popap__sum-text">Всего:</div>
+									<div class="popap__sum">362 грн</div>
+								</div>
+								<div class="popap__buttons">
+									<a class="popap-button button-popap-opacity" href="#">Перейти в корзину</a>
+									<a class="popap-button" href="#">Оформить заказ</a>
+								</div>
+							</div>
+							<div class="popap__button-close"><a href="#fix" class="button-popap-close"></a></div>
+
+						</div>
+
+					</div>
+				</div>
+				<div id="popup-count" class="popap-main">
+					<div class="wrapper-popap">
+						<div class="backgraund-popap"></div>
+						<a class="popap-area" href="#fix"></a>
+
+						<div class="popap">
+
+							<div class="popap__content">
+
+								<div class="popap__block-text">
+									<div class="popap__title">В корзине нет товаров</div>
+									<div class="popap__text">Начните с каталога товаров</div>
+								</div>
+
+								<div class="popap__buttons">
+									<a class="popap-button" href="#">Перейти в каталог</a>
+								</div>
+							</div>
+							<div class="popap__button-close"><a href="#fix" class="button-popap-close"></a></div>
+
+						</div>
+
+					</div>
+				</div>
+
 				<div class="header-top__container">
 					<button class="button-burger"><span></span></button>
 
@@ -67,11 +150,11 @@
 						</div>
 						<div class="header-top__basket-block">
 							<div class="header-top__basket-button">
-								<a class="button-basket" href="#"></a>
+								<a class="button-basket" href="#popup-basket"></a>
 							</div>
 							<div class="header-top__basket-content">
 								<div class="header-top__basket-text mobile-none">Корзина</div>
-								<a class="button-add-basket" href="#"><span class="add-basket-text mobile-none">Добавить
+								<a class="button-add-basket" href="#popup-count"><span class="add-basket-text mobile-none">Добавить
 										товары</span><span class="add-basket-count">0</span></a>
 							</div>
 						</div>
@@ -371,7 +454,7 @@
 		</footer>
 	</div>
 
-	<script src="js/app.min.js?_v=20220908163502"></script>
+	<script src="js/app.min.js?_v=20220908203559"></script>
 </body>
 
 </html>
