@@ -937,6 +937,26 @@ h6 {
           backdrop-filter: blur(18px);
 }
 
+._bodyBg-active {
+  overflow: hidden;
+}
+
+._bodyBg-active::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08);
+  -webkit-backdrop-filter: blur(18px);
+          backdrop-filter: blur(18px);
+}
+
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1790,7 +1810,7 @@ h6 {
   -o-transition: 0s;
   transition: 0s;
   text-align: left;
-  padding-left: 51px !important;
+  padding-left: 51px;
   background: url("../img/items/catalog-mbl.svg") 10px center no-repeat, url("../img/items/arrow-white.svg") 97.5% center no-repeat !important;
 }
 
@@ -1802,7 +1822,7 @@ h6 {
   -webkit-transition: 0s;
   -o-transition: 0s;
   transition: 0s;
-  padding-left: 51px !important;
+  padding-left: 51px;
   background: url("../img/items/basket-mbl.svg") 10px center no-repeat !important;
 }
 
@@ -1818,7 +1838,7 @@ h6 {
   -webkit-transition: 0s;
   -o-transition: 0s;
   transition: 0s;
-  padding-left: 51px !important;
+  padding-left: 51px;
   background: url("../img/header/person-white.svg") 10px center no-repeat !important;
   padding-left: 51px;
 }
@@ -1832,7 +1852,7 @@ h6 {
   -o-transition: 0s;
   transition: 0s;
   background: url("../img/items/basket-mbl.svg") 10px center no-repeat !important;
-  padding-left: 51px !important;
+  padding-left: 51px;
 }
 
 .link-me-orders:hover {
@@ -1844,7 +1864,7 @@ h6 {
   -o-transition: 0s;
   transition: 0s;
   background: url("../img/items/car.svg") 10px center no-repeat !important;
-  padding-left: 51px !important;
+  padding-left: 51px;
 }
 
 .link-adress-delivery:hover {
@@ -1856,7 +1876,7 @@ h6 {
   -o-transition: 0s;
   transition: 0s;
   background: url("../img/items/password.svg") 12px center no-repeat !important;
-  padding-left: 51px !important;
+  padding-left: 51px;
 }
 
 .link-change-password:hover {
@@ -1868,7 +1888,7 @@ h6 {
   -o-transition: 0s;
   transition: 0s;
   background: url("../img/items/exit.svg") 12px center no-repeat !important;
-  padding-left: 51px !important;
+  padding-left: 51px;
 }
 
 .link-exit:hover {
@@ -2272,28 +2292,8 @@ h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    z-index: 110;
+    z-index: 90;
     overflow: hidden;
-  }
-
-  ._bodyBg-active {
-    overflow: hidden;
-  }
-
-  ._bodyBg-active::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 50;
-    opacity: 1;
-    background: rgba(0, 0, 0, 0.35);
-    -webkit-box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08);
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08);
-    -webkit-backdrop-filter: blur(18px);
-            backdrop-filter: blur(18px);
   }
 
   .menu__body {
