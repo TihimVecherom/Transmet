@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220908203559">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220908230948">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -121,17 +121,23 @@
 					</div>
 
 					<div class="header-top__search-block">
+
+						<!-- поиск -->
 						<div class="header-top__search">
-							<select data-search name="form[]" class="form ">
-								<option value="1" selected>Я ищу...</option>
-								<option value="2">Арматура 12</option>
-								<option value="3">Арматура 14</option>
-								<option value="4">Арматура 16</option>
-								<option value="5">Арматура 18</option>
-								<option value="6">Арматура 20</option>
-								<option value="7">Арматура 22</option>
-								<option value="8">Показать все результаты (963)</option>
-							</select>
+							<input placeholder="Я ищу..." class="input-search" type="text">
+							<ul class="list-search">
+								<li class="list-search__item"><a class="list-search__link link-grey" href="#">Популярные товары</a>
+									<button class="button-close-search"></button>
+								</li>
+								<li class="list-search__item"><a class="list-search__link" href="#">Арматура 12</a></li>
+								<li class="list-search__item"><a class="list-search__link" href="#">Арматура 14</a></li>
+								<li class="list-search__item"><a class="list-search__link" href="#">Арматура 16</a></li>
+								<li class="list-search__item"><a class="list-search__link" href="#">Арматура 18</a></li>
+								<li class="list-search__item"><a class="list-search__link" href="#">Арматура 20</a></li>
+								<li class="list-search__item"><a class="list-search__link link-red link-all" href="#">Показать все
+										результаты
+										(60)</a></li>
+							</ul>
 						</div>
 						<div class="header-top__button-search">
 							<a class="button button-red button-search" href="#">Найти</a>
@@ -454,7 +460,7 @@
 		</footer>
 	</div>
 
-	<script src="js/app.min.js?_v=20220908203559"></script>
+	<script src="js/app.min.js?_v=20220908230948"></script>
 </body>
 
 </html>
