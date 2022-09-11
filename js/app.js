@@ -3996,6 +3996,17 @@
         buttonCabinetBackButton.classList.toggle("_button-open-cabinet-active");
         if (menuCloseCabinet) menuCloseCabinet.classList.remove("_menu-cabinet-active");
     }));
+    const buttonFilter = document.querySelector(".button-filter-mobile");
+    const bodyFilter = document.querySelector(".filter");
+    if (buttonFilter) buttonFilter.addEventListener("click", (function(e) {
+        buttonFilter.classList.toggle("_button-filter-mobile-active");
+        if (bodyFilter) bodyFilter.classList.add("_filter-active");
+    }));
+    const buttonFilterClose = document.querySelector(".close-filter-mobile");
+    if (buttonFilterClose) buttonFilterClose.addEventListener("click", (function(e) {
+        buttonFilterClose.classList.toggle("_button-filter-mobile-active");
+        if (bodyFilter) bodyFilter.classList.remove("_filter-active");
+    }));
     const hoverButton = document.querySelector(".menu-catalog__wrapper");
     const script_parent = document.querySelector(".menu-catalog__title");
     hoverButton.addEventListener("mouseenter", (() => {
