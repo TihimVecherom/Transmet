@@ -3794,11 +3794,20 @@
                 320: {
                     slidesPerView: 1.2
                 },
-                420: {
-                    slidesPerView: 1.5
+                450: {
+                    slidesPerView: 1.2
                 },
-                560: {
-                    slidesPerView: 2
+                520: {
+                    slidesPerView: 1.4
+                },
+                580: {
+                    slidesPerView: 1.6
+                },
+                625: {
+                    slidesPerView: 1.8
+                },
+                700: {
+                    slidesPerView: 2.1
                 },
                 768: {
                     slidesPerView: 2.5
@@ -4001,11 +4010,13 @@
     if (buttonFilter) buttonFilter.addEventListener("click", (function(e) {
         buttonFilter.classList.toggle("_button-filter-mobile-active");
         if (bodyFilter) bodyFilter.classList.add("_filter-active");
+        if (bodyBg) bodyBg.classList.add("_bodyBg-active");
     }));
     const buttonFilterClose = document.querySelector(".close-filter-mobile");
     if (buttonFilterClose) buttonFilterClose.addEventListener("click", (function(e) {
         buttonFilterClose.classList.toggle("_button-filter-mobile-active");
         if (bodyFilter) bodyFilter.classList.remove("_filter-active");
+        if (bodyBg) bodyBg.classList.remove("_bodyBg-active");
     }));
     const hoverButton = document.querySelector(".menu-catalog__wrapper");
     const script_parent = document.querySelector(".menu-catalog__title");
