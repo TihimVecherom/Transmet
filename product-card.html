@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-	<title>Главная</title>
+	<title>Карточка товара</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -452,86 +452,199 @@
 		</header>
 		<main class="page">
 
-			<div class="first">
-				<div class="first__container">
-					<div class="first__list">
-						<div class="menu-catalog">
-							<div class="menu-catalog__wrapper-main wrapper-catalog-static mobile-none">
-								<nav class="menu-catalog__body">
-									<ul class="menu-catalog__list">
-										<li class="menu-catalog__item"><a href="#" class="menu-catalog__link link-armature-main">Арматура</a>
-										</li>
-										<li class="menu-catalog__item"><a href="#" class="menu-catalog__link link-pipe-main">Трубный
-												прокат</a>
-										</li>
-										<li class="menu-catalog__item"><a href="#" class="menu-catalog__link link-sheet-main">Листовой
-												прокат</a>
-										</li>
-										<li class="menu-catalog__item"><a href="#" class="menu-catalog__link link-sort-main">Сортовой и
-												фасонный
-												прокат</a></li>
-										<li class="menu-catalog__item"><a href="#" class="menu-catalog__link link-cone-main">Легированные
-												круги</a></li>
-										<li class="menu-catalog__item"><a href="#" class="menu-catalog__link link-seting-main">Сопутсвующие
-												товары</a></li>
-										<li class="menu-catalog__item"><a href="#" class="menu-catalog__link link-catalog-main">Перейти
-												в
-												каталог</a></li>
-
-										<ul class="menu-catalog__info">
-											<li class="menu-catalog__item"><a href="#" class="menu-catalog__link link-info">Справочный
-													центр</a>
-											</li>
-											<li class="menu-catalog__item"><a href="#" class="menu-catalog__link link-shape">Связаться
-													с
-													нами</a></li>
-										</ul>
-									</ul>
-
-								</nav>
-							</div>
-
-						</div>
-						<div class="consultation">
-							<div class="consultation__title">Консультация</div>
-							<div class="consultation__text">Свяжитесь с менеджером компании и он ответит на все ваши вопросы
-							</div>
-							<div class="consultation__button">
-								<a class="button-consultation" href="#">Получить консультацию</a>
-							</div>
-						</div>
-					</div>
-					<div class="first__pictures">
-						<div class="first__picture-ibg">
-							<img src="img/main/first/1.png" alt="Picture">
-							<div class="first__picture-block-text">
-								<div class="first__picture-title">Крупнейший металлопрокат в Одессе</div>
-								<div class="first__picture-items">
-									<div class="first__picture-item">
-										<div class="first__picture-item-title">12<span>млн</span></div>
-										<div class="first__picture-item-text">тонн металла
-											отгружено в 2020 г</div>
-									</div>
-									<div class="first__picture-item">
-										<div class="first__picture-item-title"> 18<span>лет</span></div>
-										<div class="first__picture-item-text">работы на рынке
-											металлопроката</div>
-									</div>
-									<div class="first__picture-item">
-										<div class="first__picture-item-title"> 250<span>компаний</span></div>
-										<div class="first__picture-item-text">являюьтся нашими
-											клиентами</div>
-									</div>
-								</div>
-							</div>
-						</div>
+			<div class="points">
+				<div class="points__container">
+					<div class="points__links">
+						<a class="points__link" href="#">Главная</a>
+						<p>|</p>
+						<a class="points__link" href="#">Каталог</a>
+						<p>|</p>
+						<a class="points__link" href="#">Арматура A400</a>
+						<p>|</p>
+						<a class="points__link link-points-active" href="#">Арматура ø 8 мм (міра)</a>
 					</div>
 				</div>
 			</div>
 
+			<div class="card-product">
+				<div class="card-product__container">
+					<div class="card-product__content-block">
+						<div class="card-product__block-pictures-content">
+							<div class="card-product__pictures">
+								<div class="card-product__picture-ibg">
+									<img src="img/main/page-product-card/1.png" alt="picture">
+								</div>
+
+							</div>
+							<div class="card-product__content">
+								<div data-da=".card-product__pictures, 860" class="card-product__content-title">Арматура 8
+									А400/A500
+									L=12000мм</div>
+								<div class="card-product__block-quantity">
+									<div class="card-product__quantity-block-title">
+										<div class="card-product__product-type-title flex-title-card-1">Ед. изм. </div>
+										<div class="card-product__product-type-title flex-title-card-2">Кол-во</div>
+									</div>
+									<div class="card-product__quantity ">
+										<div class="product__block-count-price">
+											<div class="product__product-type">
+												<select name="form[]" class="form">
+													<option value="1" selected>м.п</option>
+													<option value="2">кг</option>
+													<option value="3">т</option>
+												</select>
+											</div>
+											<div class="product__quantity">
+
+												<div class="quantity">
+													<button class="quantity-minus " type="button" onclick="this.nextElementSibling.stepDown();"></button>
+													<input class="quantity-input" type="number" min="1" value="1" readonly="">
+													<button class="quantity-plus" type="button" onclick="this.previousElementSibling.stepUp();"></button>
+												</div>
+
+												<div class="product__count">
+													<div class="product__count-type">0.14 кг</div>
+													<div class="product__count-price">1234 грн</div>
+												</div>
+											</div>
+
+
+										</div>
+									</div>
+								</div>
+								<div class="card-product__block-price">
+									<div class="card-product__block-price-title">
+										<div data-da=".card-product__price-count, 991" class="card-product__price-title">Общий вес
+											продукции 9.02 т</div>
+										<div class="card-product__price-title">Итого</div>
+									</div>
+									<div class="card-product__price-count">
+										<div class="card-product__price">12.000.000 грн</div>
+									</div>
+								</div>
+								<div class="card-product__block-buttons-text">
+									<div class="card-product__block-buttons">
+										<button class="button-add-to-basket-product"><span>Купить</span></button>
+										<button class="button-buy-click-product">Купить в один клик</button>
+									</div>
+									<div class="card-product__buttons-text">Cпособы оплаты - наличный, безналичный,
+										онлайн оплата</div>
+								</div>
+							</div>
+						</div>
+						<div data-da=".card-product__container, 768" class="card-product__block-list">
+							<div class="card-product__list">
+								<div class="menu-catalog__wrapper-main wrapper-catalog-static">
+									<nav class="menu-catalog__body">
+										<ul class="menu-catalog__list list-card-product">
+											<li class="menu-catalog__item item-catalog-card"><a href="#" class="menu-catalog__link link-card-product link-armature-card">Арматура</a>
+											</li>
+											<li class="menu-catalog__item item-catalog-card"><a href="#" class="menu-catalog__link link-card-product link-pipe-card">Трубный
+													прокат</a>
+											</li>
+											<li class="menu-catalog__item item-catalog-card"><a href="#" class="menu-catalog__link link-card-product link-card-product link-sheet-card">Листовой
+													прокат</a>
+											</li>
+											<li class="menu-catalog__item item-catalog-card"><a href="#" class="menu-catalog__link link-card-product link-sort-card">Сортовой и
+													фасонный
+													прокат</a></li>
+											<li class="menu-catalog__item item-catalog-card"><a href="#" class="menu-catalog__link link-card-product link-cone-card">Легированные
+													круги</a></li>
+											<li class="menu-catalog__item item-catalog-card"><a href="#" class="menu-catalog__link link-card-product link-seting-card">Сопутсвующие
+													товары</a></li>
+											<li class="menu-catalog__item item-catalog-card"><a href="#" class="menu-catalog__link link-card-product link-catalog-card">Перейти
+													в
+													каталог</a></li>
+
+											<ul class="menu-catalog__info info-menu-card">
+												<li class="menu-catalog__item item-catalog-card"><a href="#" class="menu-catalog__link link-card-product link-info-card">Справочный
+														центр</a>
+												</li>
+												<li class="menu-catalog__item item-catalog-card"><a href="#" class="menu-catalog__link link-card-product link-shape-card">Связаться
+														с
+														нами</a></li>
+											</ul>
+										</ul>
+
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-product__characteristics characteristics">
+
+						<div class="characteristics__items">
+							<div class="characteristics__block-item">
+								<div class="characteristics__title">Характеристики</div>
+								<div class="characteristics__content">
+									<div class="characteristics__list">
+										<div class="characteristics__item">Размер</div>
+										<div class="characteristics__item">10</div>
+									</div>
+									<div class="characteristics__list">
+										<div class="characteristics__item">Длина мм</div>
+										<div class="characteristics__item">10</div>
+									</div>
+									<div class="characteristics__list">
+										<div class="characteristics__item">Марка</div>
+										<div class="characteristics__item">10</div>
+									</div>
+									<div class="characteristics__list">
+										<div class="characteristics__item">Вес погонного метра</div>
+										<div class="characteristics__item">10</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="text-info">
+
+						<div class="text-info__content">
+							<div class="text-info__title">
+								Характеристики товара
+							</div>
+							<div class="text-info__text">Металлический стержневой прокат, изготавливаемый в соответствии с
+								ДСТУ
+								3760:2019 - длина 12000 мм, диаметр 8 мм, класс А400/A500. Каталог ООО «МЕТИНВЕСТ-СМЦ» широко
+								представляет черный прокат. У нас можно купить в Украине: арматура 8 А400/A500 L=12000мм,
+								стальной
+								лист, двутавр, швеллер и уголок. Арматурная сталь производится на высокотехнологичных
+								производственных
+								мощностях. Она характеризуется высокой прочностью, улучшенной адгезией поверхности и
+								стабильными
+								механическими свойствами. Область применения На наших металлобазах в большом количестве
+								хранится
+								арматура 8 А400/A500 L=12000мм – купить ее можно в любых объемах розничных и оптовых партий.
+								А
+								технические и качественные характеристики позволяют неограниченно использовать ее: при
+								производстве
+								железобетона; для создания плоских и пространственных каркасов; в качестве закладных
+								элементов
+								при
+								создании фундаментов, колонн и стен. Где купить Вам в большом или малом количестве нужна
+								арматура 8
+								А400/A500 L=12000мм и цена за метр имеет важное значение? Обращайтесь, повышенная складская
+								емкость
+								металлоцентров позволяет ООО «МЕТИНВЕСТ-СМЦ» оперативно выполнять даже очень крупные заказы,
+								а
+								стоимость нашей продукции поддерживается на ценовом уровне компании-производителя. Вам нужна
+								арматура
+								8 А400/A500 L=12000мм в Украине, но в удаленном районе, обращайтесь. Мы работаем по всей
+								стране,
+								а
+								клиент может заказать</div>
+						</div>
+
+					</div>
+				</div>
+
+
+			</div>
+
 			<div class="best-offers">
 				<div class="best-offers__container">
-					<div class="best-offers__title title">Лучшие предложения </div>
+					<div class="best-offers__title title">Похожая продукция</div>
 					<div class="best-offers__content">
 						<div data-tabs class="tabs">
 							<nav data-tabs-titles class="tabs__navigation">
@@ -763,270 +876,6 @@
 				</div>
 			</div>
 
-			<div class="assortment">
-				<div class="assortment__container">
-					<div class="assortment__block-title">
-						<div class="assortment__title title">Асортимент</div>
-						<a data-da=".assortment__container, 768.98" class="button-assortment" href="#">Перейти в каталог</a>
-					</div>
-					<div class="assortment__items">
-						<div class="assortment__item-block">
-							<div class="assortment__item">
-								<div class="assortment__item-title-block">
-									<div class="assortment__title-picture-ibg">
-										<img class="img-1" src="img/main/items/1.svg" alt="logo">
-									</div>
-									<div class="assortment__item-title">Арматура</div>
-								</div>
-								<div class="assortment__item-text text">
-									<ul class="text__list">
-										<li class="text__item"><a class="text__link" href="#">Арматура А240 (Круг)</a></li>
-										<li class="text__item"><a class="text__link" href="#">Aрматура А400/А500</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="assortment__item">
-								<div class="assortment__item-title-block">
-									<div class="assortment__title-picture-ibg">
-										<img class="img-4" src="img/main/items/6.svg" alt="logo">
-									</div>
-									<div class="assortment__item-title">Трубный прокат</div>
-								</div>
-								<div class="assortment__item-text text">
-									<ul class="text__list">
-										<li class="text__item"><a class="text__link" href="#">Труба круглая</a></li>
-										<li class="text__item"><a class="text__link" href="#">Труба профильная</a></li>
-
-
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="assortment__item">
-							<div class="assortment__item-title-block">
-								<div class="assortment__title-picture-ibg">
-									<img class="img-2" src="img/main/items/2.svg" alt="logo">
-								</div>
-								<div class="assortment__item-title">Сортовой и фасонный</div>
-							</div>
-							<div class="assortment__item-text text">
-								<ul class="text__list">
-									<li class="text__item"><a class="text__link" href="#">Балка двутавровая</a></li>
-									<li class="text__item"><a class="text__link" href="#">Сталь угловая</a></li>
-									<li class="text__item"><a class="text__link" href="#">Швеллер</a></li>
-									<li class="text__item"><a class="text__link" href="#">Катанка</a></li>
-									<li class="text__item"><a class="text__link" href="#">Квадрат</a></li>
-									<li class="text__item"><a class="text__link" href="#">Полоса</a></li>
-									<li class="text__item"><a class="text__link" href="#">Проволка</a></li>
-
-								</ul>
-							</div>
-						</div>
-						<div class="assortment__item">
-							<div class="assortment__item-title-block">
-								<div class="assortment__title-picture-ibg">
-									<img class="img-3" src="img/main/items/3.svg" alt="logo">
-								</div>
-								<div class="assortment__item-title">Листовой прокат</div>
-							</div>
-							<div class="assortment__item-text text">
-								<ul class="text__list">
-									<li class="text__item"><a class="text__link" href="#">Лист горячекатаный</a></li>
-									<li class="text__item"><a class="text__link" href="#">Лист холоднокатаный</a></li>
-									<li class="text__item"><a class="text__link" href="#">Лист оцинкованный</a></li>
-									<li class="text__item"><a class="text__link" href="#">Лист ст. 09Г2С</a></li>
-									<li class="text__item"><a class="text__link" href="#">Лист ПВЛ</a></li>
-									<li class="text__item"><a class="text__link" href="#">Лист рифлёный</a></li>
-
-
-								</ul>
-							</div>
-						</div>
-
-						<div class="assortment__item">
-							<div class="assortment__item-title-block">
-								<div class="assortment__title-picture-ibg">
-									<img class="img-5" src="img/main/items/4.svg" alt="logo">
-								</div>
-								<div class="assortment__item-title">Легированные круги</div>
-							</div>
-							<div class="assortment__item-text text">
-								<ul class="text__list">
-									<li class="text__item"><a class="text__link" href="#">Конструкционные круги</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="assortment__item">
-							<div class="assortment__item-title-block">
-								<div class="assortment__title-picture-ibg">
-									<img class="img-6" src="img/main/items/5.svg" alt="logo">
-								</div>
-								<div class="assortment__item-title">Сопутствующие товары</div>
-							</div>
-							<div class="assortment__item-text text">
-								<ul class="text__list">
-									<li class="text__item"><a class="text__link" href="#">Лакокрасочные изделия</a></li>
-									<li class="text__item"><a class="text__link" href="#">Отрезные круги</a></li>
-									<li class="text__item"><a class="text__link" href="#">Электроды</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="services">
-				<div class="services__container">
-					<div class="services__title title">Cервисные услуги</div>
-					<div class="services__content">
-						<div class="services__block-items-picture">
-							<div class="services__items">
-								<div class="services__item">
-									<div class="services__item-title">Лазерная резка</div>
-									<div class="services__item-text">Лазерная резка – оптимальный способ производства уникальных
-										и
-										серийных изделий из листового металла</div>
-								</div>
-								<div class="services__item">
-									<div class="services__item-title">Газовая резка</div>
-									<div class="services__item-text">Лазерная резка – оптимальный способ производства уникальных
-										и
-										серийных изделий из листового металла</div>
-								</div>
-								<div class="services__item">
-									<div class="services__item-title">Доставка по региону</div>
-									<div class="services__item-text">Лазерная резка – оптимальный способ производства уникальных
-										и
-										серийных изделий из листового металла</div>
-								</div>
-								<div class="services__item">
-									<div class="services__item-title">Рубка гильотиной</div>
-									<div class="services__item-text">Лазерная резка – оптимальный способ производства уникальных
-										и
-										серийных изделий из листового металла</div>
-								</div>
-								<div class="services__item">
-									<div class="services__item-title">Плазменная резка</div>
-									<div class="services__item-text">Лазерная резка – оптимальный способ производства уникальных
-										и
-										серийных изделий из листового металла</div>
-								</div>
-							</div>
-							<div class="services__picture-ibg picture-services">
-								<img src="img/main/services/1.png" alt="image">
-							</div>
-						</div>
-						<div class="services__picture-ibg">
-							<img src="img/main/services/2.png" alt="image">
-							<div class="services__picture-content">
-								<div class="services__picture-title">Лучшие предложения
-									на рынке</div>
-								<div class="services__picture-text">Выгода до 10 000 грн
-									для оптовых и розничных клиентов</div>
-								<div class="services__picture-button">
-									<a class="button-assortment" href="#">Перейти в каталог</a>
-								</div>
-							</div>
-						</div>
-						<div class="services__picture-ibg">
-							<img src="img/main/services/3.png" alt="image">
-							<div class="services__picture-content">
-								<div class="services__picture-title">Лучшие предложения
-									на рынке</div>
-								<div class="services__picture-text">Выгода до 10 000 грн
-									для оптовых и розничных клиентов</div>
-								<div class="services__picture-button">
-									<a class="button-assortment" href="#">Перейти в каталог</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="services__info">
-						<div class="services__info-items">
-							<div class="services__info-item">
-								<div class="services__info-picture-ibg">
-									<img class="img-car" src="img/main/services/items/car.svg" alt="car">
-								</div>
-								<div class="services__info-title-block">
-
-									<div class="services__info-title">Доставка в срок</div>
-									<div class="services__info-item-text">Собственный автопарк позволят доставлять
-										металлопродукцию
-										в самые короткие сроки</div>
-								</div>
-
-							</div>
-							<div class="services__info-item">
-								<div class="services__info-picture-ibg">
-									<img class="img-star" src="img/main/services/items/star.svg" alt="medal">
-								</div>
-								<div class="services__info-title-block">
-
-									<div class="services__info-title">Доставка в срок</div>
-									<div class="services__info-item-text">Собственный автопарк позволят доставлять
-										металлопродукцию
-										в самые короткие сроки</div>
-								</div>
-
-							</div>
-							<div class="services__info-item">
-								<div class="services__info-picture-ibg">
-									<img class="img-many" src="img/main/services/items/many.svg" alt="many">
-								</div>
-								<div class="services__info-title-block">
-
-									<div class="services__info-title">Гибкое ценообразование</div>
-									<div class="services__info-item-text">Доступная стоимость, скидки и специальные предложения
-										от
-										производителя для покупателей.</div>
-								</div>
-
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="block-news">
-				<div class="block-news__container">
-					<div class="block-news__block-title">
-						<div class="block-news__title title">Новости</div>
-						<a data-da=".block-news__content, 768.98" class="button-assortment" href="#">Читать все новости</a>
-					</div>
-					<div class="block-news__content">
-						<div class="block-news__pictures">
-							<div class="block-news__picture-ibg">
-								<img src="img/main/block-news/1.png" alt="picture">
-							</div>
-							<div class="block-news__picture-title">To Mountainfilm!</div>
-							<div class="block-news__picture-text">12 июня 2022</div>
-						</div>
-						<div class="block-news__pictures">
-							<div class="block-news__picture-ibg">
-								<img src="img/main/block-news/2.png" alt="picture">
-							</div>
-							<div class="block-news__picture-title">La Liste – Everything or Nothing: Review in Powder Magazine
-							</div>
-							<div class="block-news__picture-text">12 июня 2022</div>
-						</div>
-						<div class="block-news__pictures">
-							<div class="block-news__picture-ibg">
-								<img src="img/main/block-news/3.png" alt="picture">
-							</div>
-							<div class="block-news__picture-title">This is Beth – Reel Rock Premiere, March 2022</div>
-							<div class="block-news__picture-text">12 июня 2022</div>
-						</div>
-						<div class="block-news__pictures">
-							<div class="block-news__picture-ibg">
-								<img src="img/main/block-news/4.png" alt="picture">
-							</div>
-							<div class="block-news__picture-title">Welcome to Halcyon Post</div>
-							<div class="block-news__picture-text">12 июня 2022</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
 			<div class="block-spollers">
 				<div class="block-spollers__container">
 					<div class="block-spollers__content">
@@ -1069,6 +918,22 @@
 										</div>
 									</div>
 								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="leave-request margin-top">
+				<div class="leave-request__container">
+					<div class="leave-request__content-ibg">
+						<img src="img/main/page-catalog/Thumbnail.png" alt="background">
+						<div class="leave-request__block-text">
+							<div class="leave-request__title">Оставьте заявку, и мы свяжемся с вами в ближайшее время</div>
+							<div class="leave-request__block-input">
+								<input type="text" placeholder="Ваше имя" class="input">
+								<input type="text" placeholder="Ваш номер телефона" class="input">
+								<button class="button-leave-request">Оставить заявку</button>
 							</div>
 						</div>
 					</div>
