@@ -164,7 +164,7 @@ h6 {
   position: absolute;
   width: 12px;
   height: 8px;
-  background: url("/img/main/page-product-list/arrow.svg") center center no-repeat;
+  background: url("..img/main/page-product-list/arrow.svg") center center no-repeat;
   right: 10px;
   top: 17px;
   -webkit-transform: translate(0, -50%);
@@ -689,6 +689,7 @@ h6 {
   font-size: 18px;
   color: #2C2C2E;
   position: relative;
+  background: white !important;
 }
 
 .input-datepicker::before {
@@ -709,6 +710,7 @@ h6 {
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
+  background: white;
 }
 
 .label-datapicket {
@@ -722,7 +724,7 @@ h6 {
   width: 46px;
   z-index: 2;
   border-radius: 0 6px 6px 6px;
-  background: rgb(255, 255, 255) url("/img/main/page-ordering/data.svg") center center no-repeat;
+  background: rgb(255, 255, 255) url("..img/main/page-ordering/data.svg") center center no-repeat;
 }
 
 .label-datapicket span {
@@ -6309,11 +6311,11 @@ main {
   }
 
   .input-datepicker {
-    width: 100%;
+    width: 100% !important;
   }
 
   .block-datepicker {
-    max-width: 100%;
+    max-width: 100% !important;
   }
 
   .first__list {
