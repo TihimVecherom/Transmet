@@ -1178,7 +1178,7 @@
         }
         modules_flsModules.select = new SelectConstructor({});
         var datepicker_min = __webpack_require__(448);
-        if (jQuery(".contact-details").length) {
+        if (jQuery(".block-datepicker").length) {
             const picker = datepicker_min("[data-datepicker]", {
                 customDays: [ "Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб" ],
                 customMonths: [ "Янв", "Фев", "Мар", "Апр", "Май", "Июн", "Июл", "Авг", "Сен", "Окт", "Ноя", "Дек" ],
