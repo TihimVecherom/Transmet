@@ -164,7 +164,7 @@ h6 {
   position: absolute;
   width: 12px;
   height: 8px;
-  background: url("img/main/page-product-list/arrow.svg") center center no-repeat;
+  background: url("/img/main/page-product-list/arrow.svg") center center no-repeat;
   right: 10px;
   top: 17px;
   -webkit-transform: translate(0, -50%);
