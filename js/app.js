@@ -4524,6 +4524,15 @@
         hoverButton.addEventListener("mouseleave", (() => {
             script_parent.classList.remove("_active-batton-catalog");
         }));
+        let passBtn = document.querySelectorAll(".button-show-password");
+        passBtn.forEach((function(btn) {
+            btn.onclick = function() {
+                btn.classList.toggle("password-show-active");
+                let target = this.getAttribute("data-target");
+                let passInput = document.querySelector(target);
+                if ("password" === passInput.getAttribute("type")) passInput.setAttribute("type", "text"); else passInput.setAttribute("type", "password");
+            };
+        }));
         window["FLS"] = true;
         isWebp();
         spollers();

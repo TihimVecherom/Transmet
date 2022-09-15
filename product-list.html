@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220914150404">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220915185236">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -74,6 +74,7 @@
 
 					</div>
 				</div>
+
 				<div id="popup-count" class="popap-main">
 					<div class="wrapper-popap">
 						<div class="backgraund-popap"></div>
@@ -98,6 +99,204 @@
 
 					</div>
 				</div>
+
+				<div id="popup-registration" class="popap-main main-popap">
+					<div class="wrapper-popap">
+						<div class="backgraund-popap popap-backgraund"></div>
+						<a class="popap-area area-popap" href="#fix"></a>
+
+						<div class="popap popap-registration">
+
+							<div class="popap__content">
+								<div class="popap__content-title">Вход в личный кабинет</div>
+
+								<div class="popap__block-text text-block-registration">
+									<div class="popap__text">Эл. почта или телефон</div>
+									<div class="popap__block-input"> <input type="text"></div>
+								</div>
+
+								<div class="popap__block-text not-after text-block-registration ">
+									<div class="popap__text">Пароль</div>
+									<div class="popap__block-input">
+										<input id="js-password-1" type="password">
+										<button data-target="#js-password-1" class="button-show-password"></button>
+									</div>
+								</div>
+
+								<div class="popap__check">
+									<div class="filter__check check-popap">
+										<input id='filter' type='checkbox' />
+										<label class="check-filter" for='filter'>
+											<span class="span"></span>
+											<span class="label-text">Запомнить пароль</span>
+										</label>
+									</div>
+								</div>
+
+								<div class="popap__buttons">
+									<a class="popap-button button-popap" href="#">Войти</a>
+
+								</div>
+
+
+								<div class="popap__buttons-registration">
+									<a class="popap-button-registration" href="#registration-popap">Зарегистрироваться</a>
+									<a class="popap-button-registration" href="#registration-remove-pass">Забыли пароль</a>
+								</div>
+								<div class="popap__buttons-social">
+									<div class="popap__buttons-social-title"><span>Войти с помощью</span></div>
+									<a class="popap-button-social social-google" href="#"></a>
+									<a class="popap-button-social social-facebook" href="#"></a>
+								</div>
+							</div>
+							<div class="popap__button-close"><a href="#fix" class="button-popap-close"></a></div>
+
+						</div>
+
+					</div>
+				</div>
+
+				<div id="registration-popap" class="popap-main main-popap">
+					<div class="wrapper-popap">
+						<div class="backgraund-popap popap-backgraund"></div>
+						<a class="popap-area area-popap" href="#fix"></a>
+
+						<div class="popap popap-registration">
+
+							<div class="popap__content">
+								<div class="popap__content-title">Регистрация</div>
+
+								<div class="popap__block-text text-block-registration">
+									<div class="popap__text">Имя</div>
+									<div class="popap__block-input"> <input type="text"></div>
+								</div>
+								<div class="popap__block-text not-after text-block-registration">
+									<div class="popap__text">Фамилия</div>
+									<div class="popap__block-input"> <input type="text"></div>
+								</div>
+								<div class="popap__block-text not-after text-block-registration">
+									<div class="popap__text">Номер телефона</div>
+									<div class="popap__block-input"> <input type="text"></div>
+								</div>
+								<div class="popap__block-text not-after text-block-registration">
+									<div class="popap__text">Эл. почта</div>
+									<div class="popap__block-input"> <input type="text"></div>
+								</div>
+								<div class="popap__block-text not-after text-block-registration">
+									<div class="popap__text">Придумайте пароль</div>
+									<div class="popap__block-input"> <input type="text"></div>
+								</div>
+
+								<div class="popap__buttons">
+									<a class="popap-button button-popap" href="#">Зарегистрироваться</a>
+								</div>
+
+
+								<div class="popap__buttons-registration not-margin-bottom registration-buttons">
+									<a class="popap-button-registration" href="#">Я уже зарегистрирован</a>
+								</div>
+
+							</div>
+							<div class="popap__button-close"><a href="#fix" class="button-popap-close"></a></div>
+
+						</div>
+
+					</div>
+				</div>
+
+				<div id="registration-remove-pass" class="popap-main main-popap">
+					<div class="wrapper-popap">
+						<div class="backgraund-popap popap-backgraund"></div>
+						<a class="popap-area area-popap" href="#fix"></a>
+
+						<div class="popap popap-registration">
+
+							<div class="popap__content">
+								<div class="popap__content-title">Восстановление пароля</div>
+
+								<div class="popap__block-text text-block-registration">
+									<div class="popap__text">Эл. почта или телефон</div>
+									<div class="popap__block-input"> <input type="text"></div>
+								</div>
+
+
+
+								<div class="popap__buttons">
+									<a class="popap-button button-popap" href="#popup-registration-error">Получить временный пароль</a>
+								</div>
+
+
+								<div class="popap__buttons-registration not-margin-bottom registration-buttons">
+									<a class="popap-button-registration" href="#">Я вспомнил пароль</a>
+								</div>
+
+							</div>
+							<div class="popap__button-close"><a href="#fix" class="button-popap-close"></a></div>
+
+						</div>
+
+					</div>
+				</div>
+
+				<div id="popup-registration-error" class="popap-main main-popap">
+					<div class="wrapper-popap">
+						<div class="backgraund-popap popap-backgraund"></div>
+						<a class="popap-area area-popap" href="#fix"></a>
+
+						<div class="popap popap-registration">
+
+							<div class="popap__content">
+								<div class="popap__content-title">Восстановления пароля</div>
+
+								<div class="popap__block-text text-block-registration">
+									<div class="popap__text">Старый пароль</div>
+
+									<div class="popap__block-input"><input type="password"></div>
+									<div class="popap__text text-red">На указанный адрес электронной почты отправлен временный пароль,
+										введите его</div>
+								</div>
+
+								<div class="popap__block-text not-after text-block-registration ">
+									<div class="popap__text">Новый пароль</div>
+									<div class="popap__block-input">
+										<input class="border-red" id="js-password-2" type="password">
+										<button data-target="#js-password-2" class="button-show-password"></button>
+									</div>
+								</div>
+
+								<div class="popap__check">
+									<div class="filter__check check-popap">
+										<input id='filter-21' type='checkbox' />
+										<label class="check-filter" for='filter-21'>
+											<span class="span"></span>
+											<span class="label-text">Запомнить пароль</span>
+										</label>
+									</div>
+								</div>
+
+								<div class="popap__buttons">
+									<a class="popap-button button-popap" href="#">Войти</a>
+
+								</div>
+
+
+								<div class="popap__buttons-registration">
+									<a class="popap-button-registration" href="#registration-popap">Зарегистрироваться</a>
+									<a class="popap-button-registration" href="#registration-remove-pass">Забыли пароль</a>
+								</div>
+								<div class="popap__buttons-social">
+									<div class="popap__buttons-social-title"><span>Войти с помощью</span></div>
+									<a class="popap-button-social social-google" href="#"></a>
+									<a class="popap-button-social social-facebook" href="#"></a>
+								</div>
+							</div>
+							<div class="popap__button-close"><a href="#fix" class="button-popap-close"></a></div>
+
+						</div>
+
+					</div>
+				</div>
+
 
 				<div class="header-top__container">
 					<button class="button-burger"><span></span></button>
@@ -445,12 +644,12 @@
 						<div class="header-main__logo-person-ibg_contain">
 							<img src="img/header/person-white.svg" alt="Photo">
 						</div>
-						<button class="button-entrance-office" href="#">Войти в личный кабинет</button>
+						<a class="button-entrance-office" href="#popup-registration">Войти в личный кабинет</a>
 					</div>
 				</div>
 			</div>
 
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js?_v=20220914150404"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js?_v=20220915185236"></script>
 		</header>
 		<main class="page">
 
@@ -1582,7 +1781,7 @@
 		</footer>
 	</div>
 
-	<script src="js/app.min.js?_v=20220914150404"></script>
+	<script src="js/app.min.js?_v=20220915185236"></script>
 </body>
 
 </html>
