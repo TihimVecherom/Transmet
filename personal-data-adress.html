@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-	<title>Попапы</title>
+	<title>Личные данные (Адреса доставки - нет адресов)</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -653,282 +653,66 @@
 		</header>
 		<main class="page">
 
-			<div id="popup-basket" class="popap-main">
-				<div class="wrapper-popap">
-					<div class="backgraund-popap"></div>
-					<a class="popap-area" href="#fix"></a>
-
-					<div class="popap">
-
-						<div class="popap__content">
-
-							<div class="popap__items">
-								<div class="popap__item">
-									<div class="popap__item-text">Круг ø 6,5 А240 мера</div>
-									<div class="popap__item-block-price">
-										<div class="popap__price">37 грн</div>
-										<div class="popap__buttons-delet">
-											<button class="button-popap-delet"></button>
-											<button class="button-popap-delet-mobile">Удалить</button>
-										</div>
-									</div>
-								</div>
-								<div class="popap__item">
-									<div class="popap__item-text">Круг ø 6,5 А240 мера</div>
-									<div class="popap__item-block-price">
-										<div class="popap__price">322 грн</div>
-										<div class="popap__buttons-delet">
-											<button class="button-popap-delet"></button>
-											<button class="button-popap-delet-mobile">Удалить</button>
-										</div>
-									</div>
-								</div>
-								<div class="popap__item">
-									<div class="popap__item-text">Круг ø 6,5 А240 мера</div>
-									<div class="popap__item-block-price">
-										<div class="popap__price">322 грн</div>
-										<div class="popap__buttons-delet">
-											<button class="button-popap-delet"></button>
-											<button class="button-popap-delet-mobile">Удалить</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="popap__sum-block">
-								<div class="popap__sum-text">Всего:</div>
-								<div class="popap__sum">362 грн</div>
-							</div>
-							<div class="popap__buttons">
-								<a class="popap-button button-popap-opacity" href="#">Перейти в корзину</a>
-								<a class="popap-button" href="#">Оформить заказ</a>
-							</div>
-						</div>
-						<div class="popap__button-close"><a href="#fix" class="button-popap-close"></a></div>
-
+			<div class="points">
+				<div class="points__container">
+					<div class="points__links">
+						<a class="points__link" href="#">Главная</a>
+						<p>|</p>
+						<a class="points__link " href="#"> Личный кабинет </a>
+						<p>|</p>
+						<a class="points__link link-points-active" href="#">Адреса доставки</a>
 					</div>
-
 				</div>
 			</div>
 
-			<div id="popup-count" class="popap-main">
-				<div class="wrapper-popap">
-					<div class="backgraund-popap"></div>
-					<a class="popap-area" href="#fix"></a>
-
-					<div class="popap">
-
-						<div class="popap__content">
-
-							<div class="popap__block-text">
-								<div class="popap__title">В корзине нет товаров</div>
-								<div class="popap__text">Начните с каталога товаров</div>
-							</div>
-
-							<div class="popap__buttons">
-								<a class="popap-button" href="#">Перейти в каталог</a>
-							</div>
-						</div>
-						<div class="popap__button-close"><a href="#fix" class="button-popap-close"></a></div>
-
-					</div>
-
-				</div>
-			</div>
-
-			<div id="popup-registration" class="popap-main main-popap">
-				<div class="wrapper-popap">
-					<div class="backgraund-popap popap-backgraund"></div>
-					<a class="popap-area area-popap" href="#fix"></a>
-
-					<div class="popap popap-registration">
-
-						<div class="popap__content">
-							<div class="popap__content-title">Вход в личный кабинет</div>
-
-							<div class="popap__block-text text-block-registration">
-								<div class="popap__text">Эл. почта или телефон</div>
-								<div class="popap__block-input"> <input type="text"></div>
-							</div>
-
-							<div class="popap__block-text not-after text-block-registration ">
-								<div class="popap__text">Пароль</div>
-								<div class="popap__block-input">
-									<input id="js-password-1" type="password">
-									<button data-target="#js-password-1" class="button-show-password"></button>
+			<div class="personal-data">
+				<div class="personal-data__container">
+					<div class="personal-data__block-list-picture">
+						<div class="personal-data__personal-info personal-info">
+							<div class="personal-info__block-picture">
+								<div class="personal-info__picture-ibg">
+									<img src="img/main/page-personal-data/person-white.svg" alt="picture">
+								</div>
+								<div class="personal-info__block-text">
+									<div class="personal-info__name">Егор Михалочкин</div>
+									<div class="personal-info__email">egormm1210@gmail.com</div>
 								</div>
 							</div>
-
-							<div class="popap__check">
-								<div class="filter__check check-popap">
-									<input id='filter' type='checkbox' />
-									<label class="check-filter" for='filter'>
-										<span class="span"></span>
-										<span class="label-text">Запомнить пароль</span>
-									</label>
-								</div>
-							</div>
-
-							<div class="popap__buttons">
-								<a class="popap-button button-popap" href="#">Войти</a>
-
-							</div>
-
-
-							<div class="popap__buttons-registration">
-								<a class="popap-button-registration" href="#registration-popap">Зарегистрироваться</a>
-								<a class="popap-button-registration" href="#registration-remove-pass">Забыли пароль</a>
-							</div>
-							<div class="popap__buttons-social">
-								<div class="popap__buttons-social-title"><span>Войти с помощью</span></div>
-								<a class="popap-button-social social-google" href="#"></a>
-								<a class="popap-button-social social-facebook" href="#"></a>
+							<div class="personal-info__block-list">
+								<ul class="personal-info__list ">
+									<li class="personal-info__item"><a class="personal-info__link  link-personal-1" href="personal-data.html">Личные
+											данные </a>
+									</li>
+									<li class="personal-info__item"><a class="personal-info__link  link-personal-my " href="personal-data-my-ordering.html">Мои
+											заказы</a></li>
+									<li class="personal-info__item"><a class="personal-info__link personal-info__link-active link-personal-delivery-active link-personal-delivery" href="personal-data-adress.html">Адреса доставки</a>
+									</li>
+									<li class="personal-info__item"><a class="personal-info__link link-personal-passowrd" href="personal-data-adress-change-password.html">Изменить пароль</a>
+									</li>
+									<li class="personal-info__item"><button class="personal-button button-personal-exit">Выйти</button></li>
+								</ul>
+								<ul class="personal-info__list list-info-down">
+									<li class="personal-info__item"><a class="personal-info__link link-personal-info" href="#">Справочный центр</a>
+									</li>
+									<li class="personal-info__item"><a class="personal-info__link link-personal-shape" href="#">Связаться с нами</a></li>
+								</ul>
 							</div>
 						</div>
-						<div class="popap__button-close"><a href="#fix" class="button-popap-close"></a></div>
-
 					</div>
 
-				</div>
-			</div>
-
-			<div id="registration-popap" class="popap-main main-popap">
-				<div class="wrapper-popap">
-					<div class="backgraund-popap popap-backgraund"></div>
-					<a class="popap-area area-popap" href="#fix"></a>
-
-					<div class="popap popap-registration">
-
-						<div class="popap__content">
-							<div class="popap__content-title">Регистрация</div>
-
-							<div class="popap__block-text text-block-registration">
-								<div class="popap__text">Имя</div>
-								<div class="popap__block-input"> <input type="text"></div>
-							</div>
-							<div class="popap__block-text not-after text-block-registration">
-								<div class="popap__text">Фамилия</div>
-								<div class="popap__block-input"> <input type="text"></div>
-							</div>
-							<div class="popap__block-text not-after text-block-registration">
-								<div class="popap__text">Номер телефона</div>
-								<div class="popap__block-input"> <input type="text"></div>
-							</div>
-							<div class="popap__block-text not-after text-block-registration">
-								<div class="popap__text">Эл. почта</div>
-								<div class="popap__block-input"> <input type="text"></div>
-							</div>
-							<div class="popap__block-text not-after text-block-registration">
-								<div class="popap__text">Придумайте пароль</div>
-								<div class="popap__block-input"> <input type="text"></div>
-							</div>
-
-							<div class="popap__buttons">
-								<a class="popap-button button-popap" href="#">Зарегистрироваться</a>
-							</div>
-
-
-							<div class="popap__buttons-registration not-margin-bottom registration-buttons">
-								<a class="popap-button-registration" href="#">Я уже зарегистрирован</a>
-							</div>
-
+					<div class="personal-data__block-content">
+						<div class="personal-data__block-title">
+							<div class="personal-data__title title">Адреса доставки</div>
+							<a class="button-assortment assortment-button not-tablet" href="#">Перейти в каталог</a>
 						</div>
-						<div class="popap__button-close"><a href="#fix" class="button-popap-close"></a></div>
-
-					</div>
-
-				</div>
-			</div>
-
-			<div id="registration-remove-pass" class="popap-main main-popap">
-				<div class="wrapper-popap">
-					<div class="backgraund-popap popap-backgraund"></div>
-					<a class="popap-area area-popap" href="#fix"></a>
-
-					<div class="popap popap-registration">
-
-						<div class="popap__content">
-							<div class="popap__content-title">Восстановление пароля</div>
-
-							<div class="popap__block-text text-block-registration">
-								<div class="popap__text">Эл. почта или телефон</div>
-								<div class="popap__block-input"> <input type="text"></div>
-							</div>
-
-
-
-							<div class="popap__buttons">
-								<a class="popap-button button-popap" href="#popup-registration-error">Получить временный
-									пароль</a>
-							</div>
-
-
-							<div class="popap__buttons-registration not-margin-bottom registration-buttons">
-								<a class="popap-button-registration" href="#">Я вспомнил пароль</a>
-							</div>
-
-						</div>
-						<div class="popap__button-close"><a href="#fix" class="button-popap-close"></a></div>
-
-					</div>
-
-				</div>
-			</div>
-
-			<div id="popup-registration-error" class="popap-main main-popap">
-				<div class="wrapper-popap">
-					<div class="backgraund-popap popap-backgraund"></div>
-					<a class="popap-area area-popap" href="#fix"></a>
-
-					<div class="popap popap-registration">
-
-						<div class="popap__content">
-							<div class="popap__content-title">Восстановления пароля</div>
-
-							<div class="popap__block-text text-block-registration">
-								<div class="popap__text">Старый пароль</div>
-
-								<div class="popap__block-input"><input type="password"></div>
-								<div class="popap__text text-red">На указанный адрес электронной почты отправлен временный
-									пароль,
-									введите его</div>
-							</div>
-
-							<div class="popap__block-text not-after text-block-registration ">
-								<div class="popap__text">Новый пароль</div>
-								<div class="popap__block-input">
-									<input class="border-red" id="js-password-2" type="password">
-									<button data-target="#js-password-2" class="button-show-password"></button>
-								</div>
-							</div>
-
-							<div class="popap__check">
-								<div class="filter__check check-popap">
-									<input id='filter-21' type='checkbox' />
-									<label class="check-filter" for='filter-21'>
-										<span class="span"></span>
-										<span class="label-text">Запомнить пароль</span>
-									</label>
-								</div>
-							</div>
-
-							<div class="popap__buttons">
-								<a class="popap-button button-popap" href="#">Войти</a>
-
-							</div>
-
-
-							<div class="popap__buttons-registration">
-								<a class="popap-button-registration" href="#registration-popap">Зарегистрироваться</a>
-								<a class="popap-button-registration" href="#registration-remove-pass">Забыли пароль</a>
-							</div>
-							<div class="popap__buttons-social">
-								<div class="popap__buttons-social-title"><span>Войти с помощью</span></div>
-								<a class="popap-button-social social-google" href="#"></a>
-								<a class="popap-button-social social-facebook" href="#"></a>
+						<div class="personal-data__block-my-ordering">
+							<div class="personal-data__me-ordering-title">У вас пока нет адресов доставки</div>
+							<div class="personal-data__me-ordering-text">Или позвоните в службу поддержки
+								для получения консультации 0800 555 444 33</div>
+							<div class="personal-data__me-ordering-buttons">
+								<a class="button-add-catalog " href="#">Добавить адрес</a>
 							</div>
 						</div>
-						<div class="popap__button-close"><a href="#fix" class="button-popap-close"></a></div>
-
 					</div>
 
 				</div>
@@ -936,15 +720,7 @@
 
 
 
-			<div class="popap-block-buttons">
-				<div class="popap-big-title">Попапы</div>
-				<a href="#popup-basket">Корзина</a>
-				<a href="#popup-count">Пустая корзина</a>
-				<a href="#popup-registration">Вход в личный кабинет </a>
-				<a href="#registration-popap">Регистрация</a>
-				<a href="#registration-remove-pass">Восстановление пароля</a>
-				<a href="#popup-registration-error">Восстановление пароля (ошибка)</a>
-			</div>
+
 		</main>
 		<footer class="footer">
 			<div class="footer__container">

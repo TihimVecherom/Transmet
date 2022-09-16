@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220915185236">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220917011148">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -649,7 +649,7 @@
 				</div>
 			</div>
 
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js?_v=20220915185236"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js?_v=20220917011148"></script>
 		</header>
 		<main class="page">
 
@@ -681,14 +681,14 @@
 							</div>
 							<div class="personal-info__block-list">
 								<ul class="personal-info__list ">
-									<li class="personal-info__item"><a class="personal-info__link personal-info__link-active link-personal-1-active link-personal-1" href="#">Личные
+									<li class="personal-info__item"><a class="personal-info__link personal-info__link-active link-personal-1-active link-personal-1" href="personal-data.html">Личные
 											данные </a>
 									</li>
-									<li class="personal-info__item"><a class="personal-info__link link-personal-my" href="#">Мои
+									<li class="personal-info__item"><a class="personal-info__link link-personal-my" href="personal-data-my-ordering.html">Мои
 											заказы</a></li>
-									<li class="personal-info__item"><a class="personal-info__link link-personal-delivery" href="#">Адреса доставки</a>
+									<li class="personal-info__item"><a class="personal-info__link link-personal-delivery" href="personal-data-adress.html">Адреса доставки</a>
 									</li>
-									<li class="personal-info__item"><a class="personal-info__link link-personal-passowrd" href="#">Изменить пароль</a>
+									<li class="personal-info__item"><a class="personal-info__link link-personal-passowrd" href="personal-data-adress-change-password.html">Изменить пароль</a>
 									</li>
 									<li class="personal-info__item"><button class="personal-button button-personal-exit">Выйти</button></li>
 								</ul>
@@ -702,6 +702,83 @@
 					</div>
 					<div class="personal-data__block-content">
 						<div class="personal-data__title title">Личные данные </div>
+						<div class="personal-data__content-tabs">
+							<div data-tabs class="tabs-contact">
+								<nav data-tabs-titles class="tabs-contact__navigation">
+									<button type="submit" class="tabs-contact__title _tab-active"><span></span> Физическое
+										лицо</button>
+									<button type="submit" class="tabs-contact__title "><span></span>Юридическое
+										лицо</button>
+								</nav>
+								<div data-tabs-body class="tabs-contact__content">
+									<div class="tabs-contact__body">
+										<div class="tabs-contact__block-input">
+											<div class="input-block">
+												<div class="input-block__title">Ваше имя </div>
+												<input placeholder="Ваше имя" type="text">
+											</div>
+											<div class="input-block">
+												<div class="input-block__title">Ваша фамилия</div>
+												<input placeholder="Ваша фамилия" type="text">
+											</div>
+											<div class="input-block">
+												<div class="input-block__title">Ваш номер телефона</div>
+												<input placeholder="+38 (**) *** ** **" type="text">
+											</div>
+											<div class="input-block">
+												<div class="input-block__title">Ваш email</div>
+												<input placeholder="Ваш email" type="text">
+											</div>
+										</div>
+									</div>
+									<div class="tabs-contact__body">
+										<div class="tabs-contact__block-input">
+											<div class="input-block">
+												<div class="input-block__title">Ваше имя </div>
+												<input placeholder="Ваше имя" type="text">
+											</div>
+											<div class="input-block">
+												<div class="input-block__title">Ваша фамилия</div>
+												<input placeholder="Ваша фамилия" type="text">
+											</div>
+											<div class="input-block">
+												<div class="input-block__title">Ваш номер телефона</div>
+												<input placeholder="+38 (**) *** ** **" type="text">
+											</div>
+											<div class="input-block">
+												<div class="input-block__title">Ваш email</div>
+												<input placeholder="Ваш email" type="text">
+											</div>
+										</div>
+										<div class="tabs-contact__block-input-title">Реквизиты компании</div>
+										<div class="tabs-contact__block-input">
+											<div class="input-block">
+												<div class="input-block__title">Введите название компании </div>
+												<input placeholder="Полное название компании" type="text">
+											</div>
+											<div class="input-block">
+												<div class="input-block__title">Введите код ЕДРПОУ</div>
+												<input placeholder="Код ЕДРПОУ" type="text">
+											</div>
+											<div class="input-block">
+												<div class="input-block__title">Введите ИНН</div>
+												<input placeholder="ИНН" type="text">
+											</div>
+											<div class="input-block">
+												<div class="input-block__title">Введите полное название компании</div>
+												<input placeholder="Полное название компании" type="text">
+											</div>
+
+										</div>
+										<div class="contact-details__buttons">
+											<a class="button-contact-details details-button" href="#">Сохранить изменения</a>
+										</div>
+
+									</div>
+
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -799,7 +876,7 @@
 		</footer>
 	</div>
 
-	<script src="js/app.min.js?_v=20220915185236"></script>
+	<script src="js/app.min.js?_v=20220917011148"></script>
 </body>
 
 </html>
